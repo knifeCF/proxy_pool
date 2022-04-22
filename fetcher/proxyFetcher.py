@@ -158,8 +158,8 @@ class ProxyFetcher(object):
     #     """
     #     PzzQz https://pzzqz.com/
     #     """
-    #     from requests import Session
-    #     from lxml import etree
+    #     from requests库 import Session
+    #     from lxml库 import etree
     #     session = Session()
     #     try:
     #         index_resp = session.get("https://pzzqz.com/", timeout=20, verify=False).text

@@ -77,7 +77,7 @@ class WebRequest(object):
                 self.response = requests.get(url, headers=headers, timeout=timeout, *args, **kwargs)
                 return self
             except Exception as e:
-                self.log.error("requests: %s error: %s" % (url, str(e)))
+                self.log.error("requests库: %s error: %s" % (url, str(e)))
                 retry_time -= 1
                 if retry_time <= 0:
                     resp = Response()
